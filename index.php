@@ -1,55 +1,15 @@
-<?php
+<?php $title = "Home"; ?>
+<?php include('header.php'); ?>
 
-// from DB
-$name = "root";
-$pass = "pass1";
+<main>
+    <div class="input-section">
+        <button id="recordButton">Record </button>
+        <p id="transcription">Transcription will appear here...</p>
+    </div>
+    <div class="image-section">
+        <img id="generatedImage" src="#" alt="Generated Image will appear here">
+    </div>
+</main>
 
-function get_credetials()
-{
-    $username = (string) readline("Enter Username: ");
-    $password = (string) readline("Enter Password: ");
-
-    $credentials = [
-        "username" => $username,
-        "password" => $password
-    ];
-
-    return $credentials;
-}
-
-function login()
-{
-    global $name, $pass;
-
-    $creds = get_credetials();
-
-    if ($name == $creds["username"] && $pass == $creds["password"]) {
-        echo "Login Success";
-
-        return true;
-
-    } else {
-        echo "\nPlease try again\n";
-    }
-
-}
-
-$count = 0; // getting the number of trials
-
-do {
-
-    if(login()) {
-        break;
-    } 
-
-    $count++;
-
-    if ($count == 3) {
-        echo "You have exceeded the number of trials";
-        break;
-    }
-
-} while (true);
-
-
-?>
+<?php include('sidebar.php'); ?>
+<?php include('footer.php'); ?>
