@@ -1,25 +1,8 @@
-<?php
-
-
-function get_year() {
-    return date('Y');
-}
-
-$year = get_year();
-
-$html = <<<HTML
-
-  <!-- Footer content -->
-  
+        <!-- Footer content -->
         <footer>
-            <p>Copyright © Delbert Kipyegon $year</p>
+            <p>Copyright © Your Website 2023</p>
         </footer>
-    
-<script src="script.js"></script>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
-
-HTML;
-
-echo $html;
-?>

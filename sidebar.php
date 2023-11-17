@@ -1,12 +1,4 @@
-<?php 
-$html = <<<HTML
-
+<!-- Sidebar content like login form, recent updates, etc. -->
 <div class="sidebar">
-Sidebar is here
+    <!-- Sidebar content goes here -->
 </div>
-
-HTML;
-
-echo $html;
-
-?>
