@@ -1,0 +1,77 @@
+body {
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    position:fixed;
+    /* position: absolute; */
+    text-align: center;
+    top: 0px;
+    background: black;
+    color: white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /
+}
+
+.container {
+    /* position: absolute; */
+    width: 80%;
+    margin-top: 5rem;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+    margin-bottom: 1rem;
+}
+
+
+
+footer {
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    background: black;
+    color: white;
+    padding: 20px;
+    width: 97%;
+}
+
+.input-section, .image-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#recordButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#generatedImage {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
