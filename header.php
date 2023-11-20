@@ -1,22 +1,26 @@
 <?php
 
-$html = <<<ENDHTML
+$title = "Artistic Voice";
+
+$html = <<<HTML
 <html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $title ?? 'Default Title'; ?></title>
-    <link rel="stylesheet" href="styles.css">
+    <title>$title </title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>AI Image Generator</h1>
+            <h1>Artistic Voice</h1>
             <!-- Add navigation menu, search box etc. here if needed -->
         </header>
 
-ENDHTML;
+HTML;
 
+echo $html;
 
 ?>

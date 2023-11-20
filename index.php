@@ -1,5 +1,10 @@
-<?php $title = "Home"; ?>
-<?php include('header.php'); ?>
+<?php
+
+$title = "Home";
+include('header.php');
+
+
+$html = <<<HTML
 
 <main>
     <div class="input-section">
@@ -11,5 +16,14 @@
     </div>
 </main>
 
-<?php include('sidebar.php'); ?>
-<?php include('footer.php'); ?>
+
+</div>
+
+HTML;
+
+echo $html;
+
+include('sidebar.php');
+// include('footer.php');
+
+?>
