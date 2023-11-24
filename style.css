@@ -45,8 +45,8 @@ header {
 
 #generatedImage {
     max-width: 100%;
-    height: auto;
+    height: 50%;
     border: 1px solid #ddd;
     border-radius: 4px;
-    padding: 5px;
+    padding: 2px;
 }

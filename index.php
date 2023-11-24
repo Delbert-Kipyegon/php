@@ -1,29 +1,28 @@
 <?php
 
 $title = "Home";
-include('header.php');
+include 'header.php';
 
+// get_header()
 
-$html = <<<HTML
+$transcription = "Voice Transcription ";
 
-<main>
+?>
+
+<section>
     <div class="input-section">
         <button id="recordButton">Record </button>
-        <p id="transcription">Transcription will appear here...</p>
+        <p id="transcription">
+            <?php echo $transcription ?>
+        </p>
     </div>
     <div class="image-section">
         <img id="generatedImage" src="#" alt="Generated Image will appear here">
     </div>
-</main>
+</section>
 
 
 </div>
 
-HTML;
 
-echo $html;
-
-include('sidebar.php');
-// include('footer.php');
-
-?>
+<?php include 'footer.php' ?>
